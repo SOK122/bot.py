@@ -45,7 +45,7 @@ def back_menu() -> InlineKeyboardMarkup:
 @dp.message(CommandStart())
 async def cmd_start(message: Message):
     text = (
-        "👋 <b>Добро пожаловать в M&R Company!</b>\n\n"
+        "👋 <b>Добро пожаловать !</b>\n\n"
         "Выберите интересующий вас раздел ниже 👇"
     )
     await message.answer(text, reply_markup=main_menu(), parse_mode="HTML")
